@@ -14,8 +14,8 @@ caffe_root = pref + 'digits-2.0/caffe/'
 
 map = '''ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()-=+/{}[]\?<>'''
 
-MODEL_FILE = pref+'ASPOSE/asposetester/aspose_lenet32_30iter/deploy.prototxt'
-PRETRAINED = pref+'ASPOSE/asposetester/aspose_lenet32_30iter/snapshot_iter_322590.caffemodel'
+MODEL_FILE = pref+'ASPOSE/asposetester/aspose_lenet32-conv50-100/deploy.prototxt'
+PRETRAINED = pref+'ASPOSE/asposetester/aspose_lenet32-conv50-100/snapshot_iter_322590.caffemodel'
 
 net = caffe.Classifier(MODEL_FILE, PRETRAINED,image_dims=(32, 32))
 caffe.set_mode_cpu()
